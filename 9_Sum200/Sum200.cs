@@ -22,9 +22,17 @@ namespace _9_Sum200
         static void Main(string[] args)
         {
             WriteLine("hw4#9 - Patrick Barnes");
-            WriteLine("HomeSales");
+            WriteLine("Sum200");
 
-
+            int itr = 0;
+            int sum = 0;
+            while (itr <= 200)
+            {
+                sum += itr;
+                if (itr >= 100)
+                    Console.WriteLine(sum);
+                ++itr;
+            }
 
             WriteLine("--End--");
         }

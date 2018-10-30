@@ -29,7 +29,7 @@ namespace _6_DisplayMultiplicationTable
                 {
                     if (h == 0 && v == 0)
                         Write(" {0,3} "," ");
-                    if (h == 0 && v != 0)
+                    else if (h == 0 && v != 0)
                         Write(" {0,3} ", h + 1);
                     else
                     {

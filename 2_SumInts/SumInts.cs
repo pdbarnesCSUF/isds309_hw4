@@ -23,8 +23,18 @@ namespace SumInts
         {
             WriteLine("hw4#2 - Patrick Barnes");
             WriteLine("SumInts");
-
-
+            int count = 0;
+            int entry = 0;
+            int sum = 0;
+            while (entry != 999) //backup check
+            {
+                count++;
+                Write("Enter number {0}:", count);
+                entry = int.Parse(ReadLine());
+                if (entry == 999) break;
+                sum += entry;
+            }
+            WriteLine("Sum:{0}", sum);
 
             WriteLine("--End--");
         }

@@ -24,8 +24,16 @@ namespace EnterUppercaseLetters
         {
             WriteLine("hw4#3 - Patrick Barnes");
             WriteLine("EnterUppercaseLetters");
-
-
+            char entry = '0';
+            while (entry != '!')
+            {
+                Write("Enter uppercase letter:");
+                entry = char.Parse(ReadLine());
+                if (entry >= 'A' && entry <= 'Z')
+                    WriteLine("*OK*");
+                else
+                    WriteLine("Thats not an uppercase letter");
+            }
 
             WriteLine("--End--");
         }

@@ -23,7 +23,24 @@ namespace _6_DisplayMultiplicationTable
             WriteLine("hw4#6 - Patrick Barnes");
             WriteLine("DisplayMultiplicationTable");
 
-
+            for (int h = 0; h < 11; ++h)
+            {
+                for (int v = 0; v < 11; ++v)
+                {
+                    if (h == 0 && v == 0)
+                        Write(" {0,3} "," ");
+                    if (h == 0 && v != 0)
+                        Write(" {0,3} ", h + 1);
+                    else
+                    {
+                        if (v == 0)
+                            Write(" {0,3} ", v + 1);
+                        else
+                            Write(" {0,3} ", h * v);
+                    }
+                }
+                WriteLine("");
+            }
 
             WriteLine("--End--");
         }

@@ -24,8 +24,14 @@ namespace _7_MultiplicationTable
         {
             WriteLine("hw4#7 - Patrick Barnes");
             WriteLine("MultiplicationTable");
-
-
+            
+            int entry = 0;
+            Write("Enter number:");
+            entry = int.Parse(ReadLine());
+            for (int i = 1; i <= 10; ++i)
+            {
+                WriteLine("{0,3} x {1,2} = {2}",i,entry,i*entry);
+            }
 
             WriteLine("--End--");
         }

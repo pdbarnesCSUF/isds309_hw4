@@ -30,11 +30,11 @@ namespace _6_DisplayMultiplicationTable
                     if (h == 0 && v == 0)
                         Write(" {0,3} "," ");
                     else if (h == 0 && v != 0)
-                        Write(" {0,3} ", h + 1);
+                        Write(" {0,3} ", v);
                     else
                     {
                         if (v == 0)
-                            Write(" {0,3} ", v + 1);
+                            Write(" {0,3} ", h);
                         else
                             Write(" {0,3} ", h * v);
                     }

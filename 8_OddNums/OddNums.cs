@@ -23,7 +23,13 @@ namespace _8_OddNums
             WriteLine("hw4#8 - Patrick Barnes");
             WriteLine("OddNums");
 
-
+            int itr = 0;
+            while (itr<100)
+            {
+                if (itr % 2 == 1)
+                    WriteLine(itr);
+                ++itr;
+            }
 
             WriteLine("--End--");
         }
